@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/baseline_dashboard_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/bottom_search"
+        android:icon="@drawable/baseline_picture_as_pdf_24"
+        android:title="Generate Pdf Report" />
+
+    <item
+        android:id="@+id/bottom_settings"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Search Student" />
+
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/baseline_manage_accounts_24"
+        android:title="My Profile" />
+
+
+</menu>

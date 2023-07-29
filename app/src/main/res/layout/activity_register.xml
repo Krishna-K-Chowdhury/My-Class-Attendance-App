@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.RegisterActivity"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ash_gray2"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ash_gray"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:text="New Registration"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/nameid"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                    android:hint="Enter full name"
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/rollid"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/nameid"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_format_list_numbered_24"
+                    android:hint="Enter Roll number"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/yearid"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/rollid"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_calendar_today_24"
+                    android:hint="Enter Sem (1/2/3/4/5/6/7/8)"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:paddingLeft="2dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/yearid"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_domain_24"
+                    android:hint="Enter Dept. (CSE/EE/ME/TT)"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/s_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/yearid"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_contact_phone_24"
+                    android:hint="Enter Mobile Number (10 digits)"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="5dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/s_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/yearid"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:hint="Enter Email ID"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="5dp"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/s_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/yearid"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_edit_location_24"
+                    android:hint="Enter location"
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/s_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/yearid"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_date_range_24"
+                    android:hint="Enter DOB (YYYYMMDD)"
+                    android:inputType="date"
+                    android:maxLength="8"
+                    android:paddingLeft="2dp"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/s_gname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/yearid"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                    android:hint="Enter Guardian Name"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="2dp"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/s_gmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_below="@id/yearid"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/border_draw"
+                    android:drawableLeft="@drawable/baseline_contact_phone_24"
+                    android:hint="Enter guardian mobile number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="5dp"
+                    android:textSize="20dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dept"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/custom_button"
+                    android:ems="10"
+                    android:text="Register"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dashBd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/custom_button"
+                    android:ems="10"
+                    android:text="Dashboard"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/courseRegRedir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/custom_button"
+                    android:ems="12"
+                    android:text="Course Registration"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

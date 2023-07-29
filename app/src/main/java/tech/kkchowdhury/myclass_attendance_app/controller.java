@@ -6,7 +6,7 @@ import tech.kkchowdhury.myclass_attendance_app.backend_api.ApiUrls;
 
 public class controller {
     private static final String url= ApiUrls.BASE_URL;
-    private static controller clienobject;
+    private static controller clientObject;
     private static Retrofit retrofit;
 
     controller() {
@@ -17,9 +17,9 @@ public class controller {
     }
 
     public static synchronized controller getInstance() {
-        if(clienobject==null)
-            clienobject=new controller();
-        return  clienobject;
+        if(clientObject==null)
+            clientObject=new controller();
+        return  clientObject;
     }
 
     public api_interface getapi()

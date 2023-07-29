@@ -60,10 +60,9 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setSelectedItemId(R.id.bottom_home);
 
-//        checkuserexistence();
+
         initDatePicker();
         dateButton = findViewById(R.id.datePickerButton);
-//        dateButton.setText(getTodaysDate());
 
         autoCompleteDept = findViewById(R.id.auto_dept_field);
         autoCompleteSem = findViewById(R.id.auto_sem_field);
@@ -121,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = parent.getItemAtPosition(position).toString();
                 text3 = item;
-//                Toast.makeText(getApplicationContext(),"Dept: "+item,Toast.LENGTH_SHORT).show();
+
             }
         });
         adapterSem = new ArrayAdapter<String>(this,R.layout.list_item,semValues);
@@ -131,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = parent.getItemAtPosition(position).toString();
                 semVal = item;
-//                Toast.makeText(getApplicationContext(),"Sem: "+item,Toast.LENGTH_SHORT).show();
+
             }
         });
         adapterCourse = new ArrayAdapter<String>(this,R.layout.list_item,courseValues);
@@ -141,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = parent.getItemAtPosition(position).toString();
                 courseVal = item;
-//                Toast.makeText(getApplicationContext(),"Course: "+item,Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -328,8 +327,7 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
 
         if (pressedTime + 2000 > System.currentTimeMillis()) {
-//            super.onBackPressed();
-//            finish();
+
             SharedPreferences sp = getSharedPreferences("credentials", MODE_PRIVATE);
             if (sp.contains("username")) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);

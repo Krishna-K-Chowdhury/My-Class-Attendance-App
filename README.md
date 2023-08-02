@@ -1,6 +1,9 @@
 # My-Class-Attendance-App
 This repository contains the source code for my Android Class Attendance Management app, backed by a robust RESTful API developed in PHP. Efficiently manage attendance, secure login, generate reports, and more using Android (Java) and MySQL DBMS. Deployed on Google Cloud Compute Engine with Apache2 &amp; MariaDB Webserver.
 
+## Demo
+[Click here to watch a quick demo](https://www.linkedin.com/posts/krishna-kishore-chowdhury-4ab0431b9_connections-mobileappdevelopment-databasemanagement-activity-7091092278420664320-OyUA?utm_source=share&utm_medium=member_desktop)
+
 ## Features
 
 - Secure login/logout system for faculty members
